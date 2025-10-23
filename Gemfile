@@ -42,6 +42,8 @@ gem "thruster", require: false
 
 gem "yabeda-rails"
 gem "yabeda-prometheus"
+gem "redis"
+gem "logster"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -55,6 +57,7 @@ group :development, :test do
 end
 
 group :development do
+  gem "rails_semantic_logger"
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 end

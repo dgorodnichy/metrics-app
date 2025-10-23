@@ -82,8 +82,8 @@ production:
   primary: &primary_production
     <<: *default
     database: metrics_app_production
-    username: metrics_app
-    password: <%= ENV["METRICS_APP_DATABASE_PASSWORD"] %>
+    username: postgres
+    password: postgres
   cache:
     <<: *primary_production
     database: metrics_app_production_cache

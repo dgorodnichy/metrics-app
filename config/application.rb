@@ -23,5 +23,6 @@ module MetricsApp
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    Logster.set_environments([ :production ])
   end
 end
